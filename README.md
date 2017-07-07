@@ -7,7 +7,7 @@
     a = [x + 1 for x in range(10)]  # 人数为10人，编号1~10
     index, step = 0, 3    # 数到3的人出列
     while len(a) > 1:
-        index = (index + s - 1) % len(a)  
+        index = (index + step - 1) % len(a)  
         print('kill No.', a[index])
         del a[index]
     print('\nWinner is', a[0])
